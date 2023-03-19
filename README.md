@@ -1,5 +1,6 @@
 # jocksenglish
 
+The web has been up and running since October 2022.
 Next steps:
 
 - [ ] Tidy up css files.
