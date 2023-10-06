@@ -1,4 +1,4 @@
-$(window).on('scroll', function(e){
+$(window).on('scroll', function (e) {
   //console.log('Scrolled!');
   var quienesDistance = $('.r1').offset().top;
   //console.log(quienesDistance);
@@ -29,16 +29,16 @@ $("#espec, #espec0, #espec1, #espec2, #espec3, #espec4, #espec5, #espec6, #espec
   $('#navbarNavDropdown').collapse('hide');
   $('.r1').css("color", "rgba(255,255,0,1)");
   $('.r2').css("color", "rgba(255,255,255,1)");
-  if (cond===false) {
+  if (cond === false) {
     cond = true;
   }
 });
 
 $("span.navbar-toggler-icon").on('click', function () {
-  if (cond===true) {
+  if (cond === true) {
     $('.r1').css("color", "rgba(0,0,0,0)");
     cond = false;
-  } else if (cond===false) {
+  } else if (cond === false) {
     $('.r1').css("color", "rgba(255,255,255,1)");
     cond = true;
   }
@@ -59,7 +59,7 @@ function initMap() {
   // The marker, positioned at Vivero
   const marker = new google.maps.Marker({
     position: vivero,
-    title:"Centro Comercial Ramallosa, Local 22.",
+    title: "Centro Comercial Ramallosa, Local 22.",
     map: map,
   });
   map.setTilt(0);
