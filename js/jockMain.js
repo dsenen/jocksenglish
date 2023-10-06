@@ -92,13 +92,13 @@ function currentTime() {
 
   var dayNumber = today.getDate()
 
-  $('#date').html("Today is " + dayWord + ", the " + dayNumber + appendix() + " of " + monthWord + ", " + today.getFullYear() + " and this is the time now: ");
+  $('#date').html(monthWord + today.getFullYear());
 
   hour = updateTime(hour);
   min = updateTime(min);
   sec = updateTime(sec);
   day = updateTime(day);
-  $("#clock").html(hour + " : " + min + " : " + sec); /* adding time to the div */
+  $("#clock").html(hour);
   var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
 }
 
