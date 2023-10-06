@@ -46,19 +46,88 @@ $("span.navbar-toggler-icon").on('click', function () {
 
 ///////////////////////////////////////////////////////
 
+function currentTime() {
+  var today = new Date();
+
+  var monthWord = today.getMonth();
+
+  switch(monthWord) {
+    case 0:
+      monthWord = 'January';
+      break;
+    case 1:
+      monthWord = 'February';
+      break;
+    case 2:
+      monthWord = 'March';
+      break;
+    case 3:
+      monthWord = 'April';
+      break;
+    case 4:
+      monthWord = 'May';
+      break;
+    case 5:
+      monthWord = 'June';
+      break;
+    case 6:
+      monthWord = 'July';
+      break;
+    case 7:
+      monthWord = 'August';
+      break;
+    case 8:
+      monthWord = 'September';
+      break;
+    case 9:
+      monthWord = 'October';
+      break;
+    case 10:
+      monthWord = 'November';
+      break;
+    case 11:
+      monthWord = 'December';
+      break;
+  }
+
+  var dayNumber = today.getDate()
+
+  $('#date').html("Today is " + dayWord + ", the " + dayNumber + appendix() + " of " + monthWord + ", " + today.getFullYear() + " and this is the time now: ");
+
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec);
+  day = updateTime(day);
+  $("#clock").html(hour + " : " + min + " : " + sec); /* adding time to the div */
+  var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+}
+
+function updateTime(k) {
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
+}
+
+currentTime(); /* calling currentTime() function to initiate the process */
+
+///////////////////////////////////////////////////////
+
 function initMap() {
-  // The location of Vivero
-  const vivero = { lat: 42.11744, lng: -8.81170 };
-  // The map, centered at Vivero
+  // The Academia's location
+  const academia = { lat: 42.11744, lng: -8.81170 };
+  // The map, centered at Academia
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 18,
-    center: vivero,
+    center: academia,
     streetViewControl: false,
     mapTypeId: 'satellite',
   });
-  // The marker, positioned at Vivero
+  // The marker, positioned at Academia
   const marker = new google.maps.Marker({
-    position: vivero,
+    position: academia,
     title: "Centro Comercial Ramallosa, Local 22.",
     map: map,
   });
