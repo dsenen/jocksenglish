@@ -59,9 +59,9 @@ a:hover.productfocus   {color:#CC6600;font-family:verdana,arial,helvetica,sans-s
 a.copyright            {color:#663399;font-family:verdana,arial,helvetica,sans-serif;font-size:7pt;font-weight:normal;text-decoration:underline;}
 a:hover.copyright      {color:#339966;font-weight:bold;text-decoration:underline;}
 
-.date                  {color:#cc6600;font-family:verdana,arial,helvetica,sans-serif;font-size:8pt;font-weight:bold;text-decoration:none;}
+/* .date                  {color:#cc6600;font-family:verdana,arial,helvetica,sans-serif;font-size:8pt;font-weight:bold;text-decoration:none;}
 a.date                 {color:#cc6600;font-family:verdana,arial,helvetica,sans-serif;font-size:8pt;font-weight:bold;text-decoration:underline;}
-a:hover.date           {color:#cc6600;text-decoration:underline;}
+a:hover.date           {color:#cc6600;text-decoration:underline;} */
 
 .monospace             {font-family:Courier,monospace;}
 

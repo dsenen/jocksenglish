@@ -64,7 +64,7 @@ button {
   width: auto;
 }
 
-#matricula {
+/* #matricula {
   text-align: center;
   position: relative;
   top: -700px;
@@ -80,52 +80,19 @@ button {
   animation-name: matric;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-}
+} */
 
-@keyframes matric {
-  0% {
-    transform: rotate(15deg);
-    font-size: 2.5em;
-    border-color: yellow;
-  }
-
-  25% {
-    transform: border-color: red;
-  }
-
-  50% {
-    transform: border-color: yellow;
-  }
-
-  75% {
-    transform: border-color: red;
-  }
-
-  90% {
-    transform: rotate(15deg);
-    font-size: 2.5em;
-  }
-
-  92% {
-    transform: rotate(10deg);
-    font-size: 3em;
-  }
-
-  95% {
-    transform: rotate(15deg);
-    font-size: 2.5em;
-  }
-
-  97% {
-    transform: rotate(10deg);
-    font-size: 3em;
-  }
-
-  100% {
-    transform: rotate(15deg);
-    font-size: 2.5em;
-  }
-}
+/* @keyframes matric {
+  0%   {transform: rotate(15deg); font-size: 2.5em; border-color :yellow;}
+  25%  {transform: border-color: red;}
+  50%  {transform: border-color: yellow;}
+  75%  {transform: border-color: red;}
+  90%  {transform: rotate(15deg); font-size: 2.5em;}
+  92%  {transform: rotate(10deg); font-size: 3em;}
+  95%  {transform: rotate(15deg); font-size: 2.5em;}
+  97%  {transform: rotate(10deg); font-size: 3em;}
+  100% {transform: rotate(15deg); font-size: 2.5em;}
+} */
 
 /*BODY*/
 
@@ -137,15 +104,7 @@ a:hover {
   color: #5de3ff;
 }
 
-/*Id's body*/
-
-#imgtable {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
 main {
-  /*  background-color: #262E42;*/
   background-color: black;
 }
 
@@ -155,17 +114,6 @@ main {
   padding-top: 55px;
   margin-left: 18%;
   color: #99A98C;
-}
-
-.cabeza-2 {
-  color: #99A98C;
-  margin-left: 18%;
-  margin-right: 18%;
-  padding-top: 2%;
-}
-
-.imgtablecol {
-  background-color: #262E42;
 }
 
 .lead {
@@ -184,11 +132,6 @@ main {
   margin-left: 18%;
   margin-bottom: 2%;
   color: #E0DECE;
-}
-
-.modal-body {
-  overflow: hidden;
-  margin: auto;
 }
 
 /*Google Maps*/
@@ -215,17 +158,6 @@ img {
   width: 100%;
 }
 
-.img-fluid {
-  width: 100%;
-  height: auto;
-}
-
-.imgtableimg {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  width: 80%;
-}
-
 .piep {
   text-align: right;
   color: #99A98C;
@@ -243,7 +175,6 @@ img {
 }
 
 #boardsImg img {
-  /*  width: 300px;*/
   height: 150px;
   padding: 1rem;
 }
@@ -257,8 +188,8 @@ img {
   margin: 1.125rem 10%;
 }
 
-#teachTextEng {
-  color: #fcb321;
+.teachTextEng {
+  color: #fcb321 !important;
 }
 
 /*Apple*/
@@ -299,13 +230,6 @@ img {
 
   .header-title {
     height: 520px;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .modal-lg {
-    width: 1050px;
-    /* New width for large modal */
   }
 }
 
@@ -357,11 +281,11 @@ img {
     text-align: left;
   }
 
-  #matricula {
+  /* #matricula {
     top: -300px;
     left: 60%;
     font-size: 2em;
-  }
+  } */
 
   .header-title {
     height: 410px;
@@ -376,10 +300,10 @@ img {
 }
 
 @media only screen and (max-width: 700px) {
-  #matricula {
+  /* #matricula {
     top: -85px !important;
     left: 25% !important;
-  }
+  } */
 
   .fullscreen-bg {
     background-size: 750px !important;
@@ -394,11 +318,6 @@ img {
 
   .r1 {
     text-align: center;
-  }
-
-  .cabeza-2 {
-    margin-left: 5%;
-    font-size: 1.7rem;
   }
 
   .display-4 {
@@ -426,10 +345,6 @@ img {
 
   #map {
     height: 50vh;
-    width: 100%;
-  }
-
-  .tiledBackground {
     width: 100%;
   }
 
@@ -483,7 +398,6 @@ img {
     width: 210px;
     height: auto;
   }
-
 }
 
 @media only screen and (max-width: 450px) {
@@ -503,10 +417,10 @@ img {
     width: 42px;
   }
 
-  #matricula {
+  /* #matricula {
     top: -40px !important;
     left: 10% !important;
-  }
+  } */
 
   .r1,
   .r2 {
@@ -524,52 +438,17 @@ img {
     height: 440px;
   }
 
-
-
-  @keyframes matric {
-    0% {
-      transform: rotate(15deg);
-      font-size: 2em;
-      border-color: yellow;
-    }
-
-    25% {
-      transform: border-color: red;
-    }
-
-    50% {
-      transform: border-color: yellow;
-    }
-
-    75% {
-      transform: border-color: red;
-    }
-
-    90% {
-      transform: rotate(15deg);
-      font-size: 2em;
-    }
-
-    92% {
-      transform: rotate(10deg);
-      font-size: 2.25em;
-    }
-
-    95% {
-      transform: rotate(15deg);
-      font-size: 2em;
-    }
-
-    97% {
-      transform: rotate(10deg);
-      font-size: 2.25em;
-    }
-
-    100% {
-      transform: rotate(15deg);
-      font-size: 2em;
-    }
-  }
+  /* @keyframes matric {
+    0%   {transform: rotate(15deg); font-size: 2em; border-color: yellow;}
+    25%  {transform: border-color: red;}
+    50%  {transform: border-color: yellow;}
+    75%  {transform: border-color: red;}
+    90%  {transform: rotate(15deg); font-size: 2em;}
+    92%  {transform: rotate(10deg); font-size: 2.25em;}
+    95%  {transform: rotate(15deg); font-size: 2em;}
+    97%  {transform: rotate(10deg); font-size: 2.25em;}
+    100% {transform: rotate(15deg); font-size: 2em;}
+} */
 }
 
 /*navbar*/
@@ -584,7 +463,6 @@ a.drop_down_transp.dropdown-item:hover {
 }
 
 .bg-dark {
-  /*  background-color: #262E42 !important;*/
   background-color: black !important;
   border-bottom: 1px solid darkgrey;
   text-shadow: none !important;
@@ -616,7 +494,6 @@ li:after {
 
 .nav-link,
 .navbar-brand {
-  /*  color: #262e42;*/
   color: black;
 }
 
