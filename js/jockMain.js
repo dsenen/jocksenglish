@@ -48,11 +48,12 @@ $("span.navbar-toggler-icon").on('click', function () {
 
 function currentTime() {
   var today = new Date();
-  if (today.getDay() < 25 && today.getMonth() <= 3) {
+  if (today.getDay() < 25 && today.getMonth() <= 5) {
     $('.date').html(today.getFullYear() - 1974 - 1);
   } else {
     $('.date').html(today.getFullYear() - 1974);
   }
+console.log(today.getMonth());
 }
 
 currentTime();
