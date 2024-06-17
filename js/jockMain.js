@@ -53,7 +53,6 @@ function currentTime() {
   } else {
     $('.date').html(today.getFullYear() - 1974);
   }
-console.log(today.getMonth());
 }
 
 currentTime();
