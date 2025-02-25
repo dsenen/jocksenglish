@@ -48,16 +48,11 @@ $("span.navbar-toggler-icon").on('click', function () {
 
 function teacherAge() {
   var today = new Date();
-<<<<<<< HEAD
   var currentYear = today.getFullYear();
   var referenceDate = new Date(currentYear, 5, 25);
 
   if (today >= referenceDate) {
     $('.date').html(currentYear - 1974);
-=======
-  if (today.getDate() < 25 && today.getMonth() <= 5) {
-    $('.date').html(today.getFullYear() - 1974 - 1);
->>>>>>> 1986440ad3c4e1bb0932fd50139373946a40f438
   } else {
     $('.date').html(currentYear - 1974 - 1);
   }
