@@ -46,16 +46,19 @@ $("span.navbar-toggler-icon").on('click', function () {
 
 ///////////////////////////////////////////////////////
 
-function currentTime() {
+function teacherAge() {
   var today = new Date();
-  if (today.getDay() < 25 && today.getMonth() <= 5) {
-    $('.date').html(today.getFullYear() - 1974 - 1);
+  var currentYear = today.getFullYear();
+  var referenceDate = new Date(currentYear, 5, 25);
+
+  if (today >= referenceDate) {
+    $('.date').html(currentYear - 1974);
   } else {
-    $('.date').html(today.getFullYear() - 1974);
+    $('.date').html(currentYear - 1974 - 1);
   }
 }
 
-currentTime();
+teacherAge();
 
 ///////////////////////////////////////////////////////
 
